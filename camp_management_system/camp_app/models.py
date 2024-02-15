@@ -121,3 +121,11 @@ class ComplaintModel(models.Model):
     
     
 
+class Bus(models.Model):
+    BusId = models.AutoField(primary_key=True)
+    BusNumber = models.CharField(max_length=400)
+    NumberOfSeats = models.IntegerField()
+    
+    
+    def __str__(self):
+        return self.BusNumber
