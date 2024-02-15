@@ -3,6 +3,10 @@ from django.db import models
 class UserTypeModel(models.Model):
     usertypeid = models.AutoField(primary_key=True)
     usertypename = models.CharField(default="", max_length=100)
+    
+class Category(models.Model):
+    cat_id = models.AutoField(primary_key=True)
+    categoryName = models.CharField(max_length = 100)
 
 class CampModel(models.Model):
     campid = models.AutoField(primary_key=True)

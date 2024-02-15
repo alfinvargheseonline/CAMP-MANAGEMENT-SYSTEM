@@ -37,5 +37,5 @@ def campBossBase(request):
     return render(request,'./camp_app/campBossBase.html')
 
 
-def AddItemCategory(request):
-    return render(request,'./camp_app/campBossAddCategory.html')
+def camp_boss_add_category(request):
+    return render(request, 'camp_app/campBossAddCategory.html')
